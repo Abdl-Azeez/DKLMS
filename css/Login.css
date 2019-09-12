@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Vollkorn|Raleway");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url(../images/DKlogin.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.box{
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  transform: none;
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background: #000000e8;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.5);
+  border-radius: 10px;
+}
+
+.box h2{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: #1c98c1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+.box span{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0;
+  color: #1c98c1;
+  font-family: 'AR DESTINE';
+  font-display: swap;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2::before, h2::after{
+  content: "";
+  background:  gray;
+  height: .1em;
+  flex: 1;
+  margin:.2em;
+}
+
+.box .inputBox
+{
+  position: relative;
+}
+
+.box .SelectBox
+{
+  position: relative;
+  display: flex;
+}
+.box .SelectBox i{
+  position: absolute;
+  top: 36px;
+  /* right: 23px; */
+  left: 74px;
+  z-index: 2;
+  display: block;
+  /* width: 35px; */
+  /* height: 20px; */
+  /* line-height: 36px; */
+  /* text-align: center; */
+  pointer-events: none;
+}
+
+.box .SelectBox select {
+    background: #47474752;
+    display: block;
+    margin: 25px 0px 22px 30px;
+    text-align: center;
+    border: 2px solid #d4c88e;
+    padding: 8px 80px;
+    font-family: 'Vollkorn', cursive;
+    width: 250px;
+    text-align: center;
+    outline: none;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.box .SelectBox option{
+  background: #000000b8;
+  color: white;
+  font-family: 'Vollkorn', cursive;
+  outline: none;
+  border:none;
+}
+
+
+a{
+ text-decoration: none;
+}
+
+.box .inputBox label{
+ position: absolute;
+ top: -45px;
+ left: 30px;
+ letter-spacing: 1px;
+ padding: 10px 0;
+ font-family: 'Vollkorn', cursive;
+ font-size: 17px;
+ color: #fff;
+ pointer-events: none;
+ transition: .5s;
+}
+i{
+ color: #1c98c1;
+ margin-right: 15px;
+}
+
+.box .inputBox input {
+ background: none;
+ display: block;
+ margin: 65px 0 22px 25px;
+ text-align: center;
+ font-family: 'Vollkorn', cursive;
+ letter-spacing: 3px;
+ border: 2px solid #1c98c1;
+ padding: 14px 25px;
+ width: 200px;
+ outline: none;
+ color: white;
+ border-radius: 24px;
+ transition: 0.5s;
+}
+.showPassword{
+ margin-left: 30px;
+ font-family: 'Vollkorn', cursive;
+}
+a button
+{
+background: transparent;
+border:none;
+outline: none;
+color: #000;
+font-family: 'Vollkorn', cursive;
+font-weight: 700;
+background: #1c98c1;
+padding: 14px 50px;
+cursor: pointer;
+border-radius: 24px;
+display: block;
+margin: -87px 170px;
+text-align: center;
+outline: none;
+transition: 0.5s;
+}
+
+a button:hover{
+background: deepskyblue;
+padding: 14px 55px;
+color: #000;
+}
+#loading_spinner
+{
+ display:none;
+}
+
+.box .inputBox input:focus /*~ label,
+/* .box .inputBox input:valid ~ label */
+{
+    width: 235px;
+    margin: 65px 0 22px 10px;
+    border-color: deepskyblue;
+}
+
+
+label.check {
+    float: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.box input[type="submit"]
+{
+  background: transparent;
+  border:none;
+  outline: none;
+  color: #000;
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  background: #1c98c1;
+  padding: 14px 50px;
+  cursor: pointer;
+  border-radius: 24px;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  outline: none;
+  transition: 0.5s;
+}
+
+.box input[type = "submit"]:hover{
+  background: deepskyblue;
+  padding: 14px 55px;
+  color: #000;
+}
+
+.forgotPass{
+    color: #1c98c1;
+    font-size: 15px;
+    margin-left: 30px;
+    text-decoration: none;
+    /* cursor: progress; */
+}
+
+.forgotPass:hover{
+  color:white;
+}
+
+.incorrect{
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+}
+
+.sendbutton
+{
+  position: relative;
+  display: flex;
+  width: 165px;
+  /* justify-content: flex-start; */
+}
+
+.sendbutton input[type="submit"]
+{
+  background: transparent;
+  border:none;
+  outline: none;
+  color: #000;
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  background: #d6ca90;
+  padding: 14px 50px;
+  cursor: pointer;
+  border-radius: 24px;
+  display: block;
+  /* margin: 40px 32px; */
+  text-align: center;
+  outline: none;
+  transition: 0.5s;
+}
+
+.sendbutton input[type = "submit"]:hover{
+  background: #e4c98e;
+  padding: 14px 55px;
+  color: #000;
+}
+
+.sendbutton i{
+  color: black;
+  position: absolute;
+  top: 54px;
+  /* right: 23px; */
+  left: 105px;
+  z-index: 2;
+  display: block;
+  /* width: 35px; */
+  /* height: 20px; */
+  /* line-height: 36px; */
+  /* text-align: center; */
+  pointer-events: none;
+}
+
+ a{
+  text-decoration: none;
+}
+
+.clear-loading {
+text-align: center;
+margin: 0em auto;
+position: relative;
+box-sizing: border-box;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+}
+
+.spinner > span,
+.spinner > span:before,
+.spinner > span:after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #1c98c1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+.spinner > span {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-left-color: transparent;
+  -webkit-animation: effect-2 2s infinite linear;
+  -moz-animation: effect-2 2s infinite linear;
+  -o-animation: effect-2 2s infinite linear;
+  animation: effect-2 2s infinite linear;
+}
+
+.spinner > span:before {
+  width: 75%;
+  height: 75%;
+  border-right-color: transparent;
+}
+
+.spinner > span:after {
+  width: 50%;
+  height: 50%;
+  border-bottom-color: transparent;
+}
+
+@-webkit-keyframes effect-2 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes effect-2 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e0e4e3;
+    font-family: 'Vollkorn', cursive;
+    opacity: 1; /* Firefox */
+}
+
+@media screen and (max-width:1060px){
+  .box{
+    left: 33%;
+  }
+}
+@media screen and (max-width:992px){
+  .box{
+    left: 29%;
+  }
+}
+@media screen and (max-width:768px){
+  .box{
+    left: 23%;
+    width: 320px;
+  }
+  .box h2{
+    font-size: 40px;
+  }
+  .box .inputBox label{
+    left:15px;
+  }
+  .box .inputBox input {
+    margin: 65px 0 22px 18px;
+  }
+  .box .inputBox input:focus {
+    margin: 65px 0px 22px -1px;
+  }
+  .showPassword {
+    margin-left: 9px;
+  }
+}
+@media screen and (max-width:640px){
+  .box{
+    left: 20%;
+  }
+}
+@media screen and (max-width:480px){
+  .box{
+    left: 13%;
+    width: 255px;
+    height: 375px;
+  }
+  .box h2{
+    font-size: 25px;
+  }
+
+  .box .inputBox label{
+    font-size: 12px;
+    left: 12%;
+    top: -75%;
+  }
+  .box .inputBox input {
+    margin: 60px 0 16px 35px;
+    padding: 10px 30px;
+    width: 92px;
+    font-size: 12px;
+  }
+  .box .inputBox input:focus {
+    margin: 60px 0px 16px 16px;
+    width: 130px;
+    font-size: 12px;
+  }
+  .showPassword {
+    margin-left: auto;
+  }
+  #check3{
+    width: 12px;
+    height: 12px;
+  }
+  label.check {
+    font-size: 12px;
+  }
+  .forgotPass {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .box input[type="submit"], .box input[type="submit"]:hover{
+    padding: 9px 25px;
+  }
+
+}

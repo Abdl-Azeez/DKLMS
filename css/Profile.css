@@ -1,0 +1,247 @@
+.profileSection{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row;
+  flex-wrap: wrap;
+  border: 3px solid #00bcfbc7;
+  border-style: inset outset outset inset;
+  margin: 40px;
+  padding: 30px;
+  width: 60%;
+  align-items: center;
+}
+
+.sideform{
+  margin-top: 60px;
+  /* width: 50%; */
+  text-transform: capitalize;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    font-family: 'Vollkorn', cursive;
+    opacity: 1; /* Firefox */
+}
+
+.profilePicture{
+  display: inline-flex;
+  position: relative;
+  flex-flow: column;
+  margin-bottom: 35px;
+  border-right: 2px solid #042344;
+  border-right-style: ridge;
+  border-bottom-right-radius: 10px;
+  /* width: 35%; */
+}
+.profilePicture img{
+  margin: 0px 20px 20px 0px;
+  /* float: left; */
+  width: 230px;
+  height: 250px;
+  border: 2px solid #00bfff;
+  border-radius: 25%;
+  background: #0c4c5d;
+}
+.profilePicture span{
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  color: black;
+  margin: 0px 55px -13px 0px;
+}
+.profilePicture input{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #042344;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  border-radius: 5px;
+  transition: border-color .5s ease-in-out;
+}
+
+.profilePicture input:focus{
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  box-shadow: none;
+  border-color: #077896;
+  outline: 0;
+}
+
+.form-group{
+  display: flex;
+}
+.form-group label{
+  display: inline-flex;
+  margin-top: 20px;
+  position: absolute;
+  font-family: 'Acme';
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.form-group input{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #042344;
+  display: flex;
+  width: 100%;
+  padding: 20px 10px 20px 100px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  border-radius: 5px;
+  transition: border-color .5s ease-in-out;
+}
+
+.form-group input:focus{
+  background: transparent;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding-left: 100px;
+  box-shadow: none;
+  border-color: #077896;
+  outline: 0;
+}
+
+.formbutton{
+  width: 30%;
+  float: right;
+  margin-top: 30px;
+}
+
+.formbutton input[type="submit"],
+.formbutton input[type="submit"]:active,
+.formbutton input[type="submit"]:focus
+{
+  border: none;
+  outline: none;
+  color: #000;
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  background: #042344d6;
+  padding: 14px 30px;
+  cursor: pointer;
+  border-radius: 24px;
+  display: block;
+  /* margin: 40px 0; */
+  text-align: center;
+  outline: none;
+  /* transition: 0.3s linear; */
+}
+
+.formbutton input:hover{
+  background: #042344;
+  padding: 14px 30px;
+  color: white;
+  font-weight: lighter;
+}
+
+.deleteForm{
+  margin: -260px 510px 0px 0px;
+}
+.deleteIcon{
+  padding: 7px 45px!important;
+  color: #eee;
+  font-weight: normal;
+}
+#dlt{
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+#dlt i{
+  margin-left: -21%;
+}
+/****************Media Queries******************/
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+
+  .profilePicture {
+    border: none;
+  }
+  .deleteForm {
+    margin: -805px 120px 0px 0px;
+  }
+
+  .deleteIcon{
+    padding: 5px 45px!important;
+    color: #eee;
+    font-weight: normal;
+  }
+
+}
+@media screen and (max-width: 992px) {
+  .profileSection{
+    width: 70%;
+  }
+  /* .deleteIcon {
+    padding: 2px 29px!important;
+    color: #eee;
+    font-weight: normal;
+    margin: 0 0px 0px -27px;
+  } */
+  #dlt i{
+    margin-left: -17%;
+    margin-top: 32px;
+  }
+  .form-group label {
+    font-size: 12px;
+  }
+
+  .form-group input {
+    padding: 20px 10px 20px 72px;
+    font-size: 12px;
+  }
+  .deleteIcon {
+    padding: 2px 29px!important;
+    color: #eee;
+    font-weight: normal;
+    margin: 33px 0px 0px -27px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .deleteForm {
+    margin: -795px 120px 0px 0px;
+  }
+  .profilePicture img {
+    width: 150px;
+    height: 150px;
+  }
+  .profilePicture span {
+    margin: 0px 30px -13px 0px;
+    font-size: 14px;
+  }
+  .profilePicture input {
+    font-size: 11px;
+  }
+  .profileSection{
+    width: 85%;
+    margin: 40px 2px;
+  }
+
+  .formbutton input[type="submit"],
+  .formbutton input:hover {
+    padding: 7px 14px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  .deleteIcon {
+    padding: 2px 24px!important;
+    color: #eee;
+    font-weight: normal;
+    margin: 35px 0px 0px -25px;
+    border-radius: 8px;
+  }
+}

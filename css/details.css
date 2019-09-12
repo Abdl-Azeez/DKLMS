@@ -1,0 +1,470 @@
+.profileSection{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #00bcfbc7;
+  border-style: inset outset outset inset;
+  margin: 40px;
+  padding: 30px;
+  width: 60%;
+  /* align-items: center; */
+}
+
+.profilePicture{
+  display: inline-flex;
+  flex-flow: column;
+  margin-bottom: 35px;
+  /* border-right: 2px solid #8b6516; */
+  /* border-right-style: ridge; */
+  border-bottom-right-radius: 10px;
+  align-items: center;
+}
+
+form{
+  /* margin-top: 60px; */
+  /* width: 50%; */
+  padding: 0px 40px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000;
+    font-family: 'Vollkorn', cursive;
+    opacity: 1; /* Firefox */
+}
+
+.profilePicture img{
+  /* margin: 20px; */
+  /* float: left; */
+  width: 150px;
+  height: 150px;
+  border: 2px solid #00bfff;
+  border-radius: 50%;
+  background: #0c4c5d;
+}
+
+.profilePicture input{
+  background: transparent;
+  border: none;
+  /* border-bottom: 2px solid #8b6516; */
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  margin-right: 15px;
+  color: black;
+  border-radius: 5px;
+  transition: border-color .5s ease-in-out;
+}
+
+
+.form-row{
+  justify-content: space-between;
+}
+
+.form-group{
+  display: flex;
+  margin-top: 17px;
+}
+.form-group label{
+  display: inline-flex;
+  margin-top: 20px;
+  position: absolute;
+  font-family: 'Acme';
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.form-group input, .form-group section, .form-group select{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #042344;
+  display: flex;
+  width: 100%;
+  padding: 20px 10px 10px 150px;
+  font-size: 15px;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+  border-radius: 5px;
+  transition: border-color .5s ease-in-out;
+}
+.form-group input:focus, .form-group section:focus, .form-group select:focus{
+outline: none;
+border: none;
+border-bottom: 2px solid #077896;
+padding-left: 150px;
+}
+.form-group select option{
+  background: transparent;
+  color: #000;
+  outline: none;
+  font-family: 'Vollkorn', cursive;
+  transition: .5s ease-in-out;
+  padding: 20px 10px 10px 15px;
+}
+.form-group select option:focus{
+  outline: none;
+  border: none;
+}
+.form-group select option[selected]{
+  padding:20px 10px 10px 195px;
+}
+.form-group textarea{
+width: 100%;
+height: 200px;
+padding: 20px;
+margin: 45px 50px 0px 50px;
+font-weight: 800;
+text-align: justify;
+/* max-height: 72%; */
+background: transparent;
+border: 2px solid #042344;
+border-radius: 20px;
+}
+
+.form-group section span{
+  border: 2px outset #042344;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.form-group textarea:focus{
+outline: none;
+}
+
+.formbutton{
+  width: 30%;
+  float: right;
+  margin-top: 30px;
+}
+
+.formbutton .inpute
+{
+  border: none;
+  outline: none;
+  color: #000;
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  background: #042344d6;
+  padding: 14px 40px;
+  cursor: pointer;
+  border-radius: 24px;
+  display: block;
+  margin: 20px 0 0 35px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s linear;
+}
+
+.formbutton .inpute:hover{
+  background: #042344;
+  padding: 14px 42px;
+  color: #eee;
+  font-weight: lighter;
+}
+.formbutton .inpute:focus, .formbutton .inpute:active{
+  border: none;
+  outline: none;
+}
+
+.modal-header h5{
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: black;
+}
+
+.modal-header h5::before, .modal-header h5::after{
+  content: "";
+  background: #000000;
+  height: .1em;
+  flex: 1;
+  margin:.2em;
+}
+
+
+.modal-form-content{
+  display: flex;
+}
+
+
+.modal-form-content select{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #000000;
+  display: flex;
+  /* width: 15%; */
+  margin-left: 220px;
+  padding: 10px;
+  /* padding-left: 50px; */
+  font-size: 15px;
+  font-weight: 900;
+  /* text-align: center; */
+  color: black;
+  border-radius: 5px;
+  transition: border-color .5s ease-in-out;
+}
+
+.modal-form-content select:focus{
+  background: transparent;
+  font-weight: 700;
+  /* letter-spacing: 1.5px; */
+  /* padding-left: 50px; */
+  box-shadow: none;
+  border-color: #064684;
+  outline: 0;
+}
+.modal-form-content select option{
+  background: #064684;
+  color: #eee;
+  font-weight: 500;
+  outline: none;
+  font-family: 'Vollkorn', cursive;
+  transition: .5s ease-in-out;
+}
+.modal-form-content select option:focus{
+  outline: none;
+  border: none;
+}
+
+.modal-form-content textarea{
+  width: 50%;
+  height: 200px;
+  padding: 20px;
+  margin: 45px 50px 0px 150px;
+  font-weight: 800;
+  text-align: justify;
+  /* max-height: 72%; */
+  background: transparent;
+  border: 2px solid #061f3a;
+  border-radius: 20px;
+}
+
+.modal-form-content textarea:focus{
+  outline: none;
+}
+.modal-form-content label{
+  color: black;
+  text-decoration: underline;
+  /* display: flex; */
+  position: absolute;
+  font-weight: 700;
+  margin: 20px 250px;
+  font-family: 'Vollkorn', cursive;
+  font-size: 18px;
+}
+
+input[type="submit"]
+{
+  border: none;
+  float: right;
+  color: #000;
+  font-family: 'Vollkorn', cursive;
+  font-weight: 700;
+  background: #042344d6;
+  padding: 14px 40px;
+  cursor: pointer;
+  border-radius: 6px;
+  display: block;
+  margin: 50px 190px 10px 0px;
+  transition: 0.3s linear;
+}
+
+input[type="submit"]:hover{
+  background: #042344;
+  /* padding: 14px 42px; */
+  color: #eee;
+  font-weight: lighter;
+  outline: none;
+  border: none;
+}
+input[type="submit"]:focus{
+  outline: none;
+  border: none;
+}
+.form-group #statuss{
+  padding: 5px 280px;
+}
+.form-group #Attach{
+  padding: 20px 195px 10px 280px;
+}
+.modal-header h5 {
+  width: 60%;
+}
+
+#viewicon{
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  margin: 4px 310px;
+}
+/****************Media Queries******************/
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  .profileSection {
+    width: 70%;
+  }
+
+  .form-group input,
+  .form-group section,
+  .form-group select {
+    padding: 20px 10px 10px 150px;
+  }
+
+  .modal-header h5 {
+    width: 79%;
+    font-size: 27px;
+  }
+  .modal-body .modal-form-content select{
+    margin:auto;
+    display: block;
+  }
+
+  .modal-body .modal-form-content textarea{
+    margin: 12px auto;
+    width: 70%;
+  }
+
+  .modal-body input[type="submit"]{
+    font-size: 13px;
+    padding: 12px 30px;
+    margin: auto 60px;
+  }
+}
+
+@media screen and (max-width: 993px) {
+  #statuss{
+    display: none;
+  }
+  .form-group input, .form-group section, .form-group select {
+    padding: 20px 10px 10px 99px;
+    font-size: 14px;
+  }
+  .profileSection {
+    width: 80%;
+    border: none;
+    margin: 40px auto;
+  }
+  .form-group #Attach{
+    padding: 20px 0px 10px 192px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileSection {
+    width: 80%;
+    border: 3px solid #0663c6;
+    border-style: inset outset outset inset;
+  }
+  .content>span{
+    font-size: 25px;
+  }
+  .form-group input, .form-group section, .form-group select {
+    font-size: 13px;
+  }
+  .form-group textarea {
+    margin: 45px 5px 0px 15px;
+    font-size: 13px;
+  }
+  
+  .formbutton .inpute {
+    padding: 12px 30px;
+    border-radius: 16px;
+  }
+  #ActDate{
+    display:none;
+  }
+  #viewicon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin: 12px 255px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .modal-header h5 {
+    width: 53%;
+    font-size: 20px;
+  }
+  .content>span {
+    width: 40%;
+  }
+  #viewicon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 18px 205px;
+  }
+  .form-group textarea {
+    font-size: 12px;
+  }
+  .form-group label{font-size: 13px;}
+  .form-group input, .form-group section, .form-group select {
+    font-size: 13px;
+    padding: 20px 10px 10px 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form{
+    padding: 0px;
+  }
+  .content>span {
+    width: 50%;
+    font-size: 20px;
+  }
+  .profilePicture img {
+    width: 100px;
+    height: 100px;
+  }
+  .profileSection {
+    width: 100%;
+    border: none;
+    margin: 15px auto;
+  }
+  .form-group label {
+    font-size: 13px;
+  }
+  .form-group input, .form-group section, .form-group select {
+    font-size: 12px;
+  }
+  .modal-header h5 {
+    width: 80%;
+    font-size: 15px;
+  }
+  .modal-body .modal-form-content select {
+    font-size: 12px;
+    width: 82%;
+  }
+  .modal-body .modal-form-content textarea {
+    width: 100%;
+    font-size: 12px;
+  }
+  .modal-body input[type="submit"]{
+    font-size: 13px;
+    padding: 9px 30px;
+    margin: auto 8px;
+    }
+  .form-group input[type="email"]{
+    padding-left: 50px;
+  }
+  .formbutton .inpute {
+    margin: auto -37px;
+    font-size: 13px;
+    border-radius: 12px;
+    padding: 12px 30px;
+  }
+  #viewicon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: 16px 195px;
+  }
+}
